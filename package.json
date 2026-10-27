@@ -1,0 +1,53 @@
+{
+  "name": "dsh-plugin-deepseek-clock",
+  "description": "DeepSeek price clock and balance for DeepSeek Harness: a composer chip shown only while a DeepSeek route is selected \u2014 peak/off-peak price window (green/red, Beijing hours) plus the topped-up balance from the API key or the signed-in account",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-0 <0.3.0"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "external": [
+        "@deepseek-ai/dsh-client-runtime/client"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/Elmeis/dsh-plugin-deepseek-clock#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elmeis/dsh-plugin-deepseek-clock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elmeis/dsh-plugin-deepseek-clock/issues"
+  }
+}
