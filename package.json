@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-deepseek-clock",
-  "description": "DeepSeek price clock and balance for DeepSeek Harness: a composer chip shown only while a DeepSeek route is selected \u2014 peak/off-peak price window (green/red, Beijing hours) plus the topped-up balance from the API key or the signed-in account",
+  "description": "DeepSeek price clock and balance for DeepSeek Harness: a composer chip shown only while a DeepSeek route is selected — peak/off-peak price window (green/red, Beijing hours) plus the topped-up balance from the API key or the signed-in account",
   "version": "0.1.0",
   "type": "module",
   "license": "MIT",
@@ -40,6 +40,7 @@
     "lib",
     "cordis.patch.yml",
     "README.md",
+    "shots",
     "LICENSE"
   ],
   "homepage": "https://github.com/Elmeis/dsh-plugin-deepseek-clock#readme",
